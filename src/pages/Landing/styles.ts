@@ -114,7 +114,14 @@ export const pageLandingContent = styled.div`
     }
 
     img {
-      height: 100%;
+      height: 10rem;
+    }
+
+    @media (max-width: 320px) {
+      text-align: center;
+      img {
+        height: 5rem;
+      }
     }
   }
 
@@ -127,6 +134,12 @@ export const pageLandingContent = styled.div`
 
     a img {
       margin-right: 2.4rem;
+    }
+
+    @media (max-width: 400px) {
+      a img {
+        margin-right: 0.8rem;
+      }
     }
   }
 
