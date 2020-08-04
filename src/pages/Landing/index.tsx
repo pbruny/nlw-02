@@ -11,7 +11,7 @@ import * as S from './styles'
 function Landing() {
   return (
     <S.pageLanding>
-      <div id="page-landing-content" className="container">
+      <S.pageLandingContent className="container">
         <S.logoContainer>
           <img src={logoImg} alt="Proffy Logo"/>
           <h2>Sua plataforma de estudos online</h2>
@@ -37,7 +37,7 @@ function Landing() {
         <S.totalConnections>
           Total de 200 conexões já realizadas <img src={purpleHeartIcon} alt="Coração roxo"/>
         </S.totalConnections>
-      </div>
+      </S.pageLandingContent>
     </S.pageLanding>  
   )
 }

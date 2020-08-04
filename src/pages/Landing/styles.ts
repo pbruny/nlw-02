@@ -11,11 +11,9 @@ export const pageLanding = styled.div`
   color: var(--color-text-in-primary);
   background: var(--color-primary);
 
-  .hero-image {
-    width: 100%;
-    grid-area: hero;
-  }
+`
 
+export const pageLandingContent = styled.div`
   @media (min-width: 1100px) {
     max-width: 1100px;
     display: grid;
@@ -23,8 +21,14 @@ export const pageLanding = styled.div`
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas: 
       "logo hero hero"
-      "buttons buttons total"
+      "buttons buttons total";
   }
+
+  .hero-image {
+    width: 100%;
+    grid-area: hero;
+  }
+
 `
 
 export const logoContainer = styled.div`
