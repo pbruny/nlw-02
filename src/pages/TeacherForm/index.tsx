@@ -4,6 +4,7 @@ import Input from '../../components/Input'
 
 import * as S from './styles'
 import waningIcon from '../../assets/images/icons/warning.svg'
+import Textarea from '../../components/Textarea'
 
 function TeacherForm() {
   return (
@@ -22,6 +23,7 @@ function TeacherForm() {
           <Input name="name" label="Nome" />
           <Input name="avatar" label="Avatar" />
           <Input name="whatsapp" label="Whatsapp" />
+          <Textarea name="bio" label="Biografia" />
         </S.Fieldset>
 
         <S.Fieldset>
