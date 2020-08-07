@@ -5,6 +5,7 @@ import Input from '../../components/Input'
 import * as S from './styles'
 import waningIcon from '../../assets/images/icons/warning.svg'
 import Textarea from '../../components/Textarea'
+import Select from '../../components/Select'
 
 function TeacherForm() {
   return (
@@ -31,7 +32,24 @@ function TeacherForm() {
             Sobre a aula
           </S.Legend>
 
-          <Input name="subject" label="Matéria" />
+          <Select 
+            name="subject" 
+            label="Matéria" 
+            options={[
+              { value: 'Matemática', label: 'Matemática'},
+              { value: 'Português', label: 'Português'},
+              { value: 'Química', label: 'Química'},
+              { value: 'Biologia', label: 'Biologia'},
+              { value: 'Física', label: 'Física'},
+              { value: 'Artes', label: 'Artes'},
+              { value: 'História', label: 'História'},
+              { value: 'Geografia', label: 'Geografia'},
+              { value: 'Literatura', label: 'Literatura'},
+              { value: 'Meio ambiente', label: 'Meio ambiente'},
+              { value: 'Empreendedorismo', label: 'Empreendedorismo'},
+            ]}
+          />
+
           <Input name="cost" label="Preço da sua hora/aula" />
         </S.Fieldset>
 
