@@ -53,6 +53,33 @@ function TeacherForm() {
           <Input name="cost" label="Preço da sua hora/aula" />
         </S.Fieldset>
 
+        <S.Fieldset>
+          <S.Legend>
+            Horários disponíveis
+            <button type="button">+ Novo horário</button>
+          </S.Legend>
+
+          <Select 
+            name="subject" 
+            label="Matéria" 
+            options={[
+              { value: 'Matemática', label: 'Matemática'},
+              { value: 'Português', label: 'Português'},
+              { value: 'Química', label: 'Química'},
+              { value: 'Biologia', label: 'Biologia'},
+              { value: 'Física', label: 'Física'},
+              { value: 'Artes', label: 'Artes'},
+              { value: 'História', label: 'História'},
+              { value: 'Geografia', label: 'Geografia'},
+              { value: 'Literatura', label: 'Literatura'},
+              { value: 'Meio ambiente', label: 'Meio ambiente'},
+              { value: 'Empreendedorismo', label: 'Empreendedorismo'},
+            ]}
+          />
+
+          <Input name="cost" label="Preço da sua hora/aula" />
+        </S.Fieldset>
+
         <S.Footer>
           <p>
             <img src={waningIcon} alt="Ícone de aviso"/>
