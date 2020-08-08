@@ -17,7 +17,7 @@ export const formTeacher = styled.form`
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.6rem;
     position: absolute;
-    bottom: -2.8rem;
+    bottom: -4.8rem;
 
     .input-block + .input-block {
       margin: 0;

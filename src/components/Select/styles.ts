@@ -25,17 +25,6 @@ export const SelectBlock = styled.div`
     margin-top: 1.4rem;
   }
 
-  &:focus-within::after {
-    width: calc(100% - 3.2rem);
-    content: "";
-    height: 2px;
-    background: var(--color-primary-light);
-    position: absolute;
-    left: 1.6rem;
-    right: 1.6rem;
-    bottom: 0.8rem;
-  }
-
   @media (min-width: 700px) {
 
     & + & {
